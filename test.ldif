@@ -1,0 +1,108 @@
+dn: ou=Users,dc=vcontext,dc=local
+objectClass: organizationalUnit
+objectClass: top
+ou: Users
+
+dn: uid=krbtgt,ou=Users,dc=vcontext,dc=local
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: krb5principal
+objectClass: krb5kdcentry
+cn: KDC Service
+sn: Service
+uid: krbtgt
+userPassword: secret
+krb5PrincipalName: krbtgt/VCONTEXT.LOCAL@VCONTEXT.LOCAL
+krb5KeyVersionNumber: 0
+
+dn: uid=ldap,ou=Users,dc=vcontext,dc=local
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: krb5principal
+objectClass: krb5kdcentry
+cn: LDAP
+sn: Service
+uid: ldap
+userPassword: randall
+krb5PrincipalName: ldap/${hostname}@VCONTEXT.LOCAL
+krb5KeyVersionNumber: 0
+
+dn: uid=HTTP,ou=Users,dc=vcontext,dc=local
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: krb5principal
+objectClass: krb5kdcentry
+cn: HTTP
+sn: Service
+uid: HTTP
+userPassword: httppwd
+krb5PrincipalName: HTTP/${hostname}@VCONTEXT.LOCAL
+krb5KeyVersionNumber: 0
+
+dn: uid=hnelson,ou=Users,dc=vcontext,dc=local
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: krb5principal
+objectClass: krb5kdcentry
+cn: Horatio Nelson
+sn: Nelson
+uid: hnelson
+userPassword: secret
+krb5PrincipalName: hnelson@VCONTEXT.LOCAL
+krb5KeyVersionNumber: 0
+
+dn: uid=jduke,ou=Users,dc=vcontext,dc=local
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: krb5principal
+objectClass: krb5kdcentry
+cn: Java Duke
+sn: duke
+uid: jduke
+userPassword: theduke
+krb5PrincipalName: jduke@VCONTEXT.LOCAL
+krb5KeyVersionNumber: 0
+
+dn: uid=jubal,ou=Users,dc=vcontext,dc=local
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: krb5principal
+objectClass: krb5kdcentry
+cn: Jubal Skaggs
+sn: Skaggs
+uid: jubal
+userPassword: newpass
+krb5PrincipalName: jubal@VCONTEXT.LOCAL
+krb5KeyVersionNumber: 0
+
+dn: uid=changepw,ou=Users,dc=vcontext,dc=local
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: krb5principal
+objectClass: krb5kdcentry
+cn: Chg Pass
+sn: Pass
+uid: changepw
+userPassword: newpass
+krb5PrincipalName: kadmin/changepw@VCONTEXT.LOCAL
+krb5KeyVersionNumber: 0
+
+dn: uid=gsstestserver,ou=Users,dc=vcontext,dc=local
+objectClass: top
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: krb5principal
+objectClass: krb5kdcentry
+cn: gsstestserver
+sn: Service
+uid: gsstestserver
+userPassword: gsstestpwd
+krb5PrincipalName: gsstestserver/xxx@VCONTEXT.LOCAL
+krb5KeyVersionNumber: 0
